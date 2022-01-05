@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#page {
+    background-color: white;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 0px 150px;
+}
+
+.title {
+    padding-bottom: 24px;
+}
+
+.subtitle {
+    padding-left: 100px;
+}
+
+.surname {
+    padding-left: 40px;
+}
+
+.nav {
+    z-index: 9999;
+    position: fixed;
+    padding-left: 74px;
+    height: 64px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    mix-blend-mode: difference;
+    filter: brightness(0) invert(1);
+}
+
+.nav-link {
+    font-family: IBM Plex Mono;
+    padding-right: 100px;
+    color: #000;
+    cursor: pointer;
+}
+
+#about {
+    background-color: #2F2F2F;
+}
+
+#work {
+    background: #E7E7E7;
+    height: 100vh;
+    display: flex;
+    grid-template-columns: none;
+    align-items: start;
+}
+
+.title_work {
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.works {
+    width: calc(100vw - 300px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.work {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#about p {
+    color: #fff;
+}
+
+#about h2 {
+    color: #fff;
+}
+
+h1 {
+    font-family: IBM Plex Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+h2 {
+    font-family: IBM Plex Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: Ibarra Real Nova;
+    font-style: bold;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p {
+    font-family: Ibarra Real Nova;
+}
+
+a {
+    font-family: Ibarra Real Nova;
+    text-decoration: none;
+}
+
+.image {
+    width: 35px;
+    height: auto;
+    padding-left: 40px;
+}
+
+.content-contacts {
+    align-self: end;
+    justify-self: end;
+    padding-bottom: 40px;
+    padding-left: 0px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@supports(scroll-snap-type: both mandatory) {
+    .no-support {
+        display: none;
+    }
+}
+
+
+.homepage {
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: overlay;
+}
+
+.homepage > .container {
+    scroll-snap-align: start;
+}
+
+.homepage > .container-some-work {
+    scroll-snap-align: start;
+}
+
+.container-some-work > .content {
+    padding: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        grid-template-columns: none;
+    }
+
+    .content-contacts {
+        display: none;
+    }
+
+    .content-title {
+        width: fit-content;
+        justify-self: center;
+    }
+
+    .work {
+        width: 200px;
+        height: 200px;
+        margin-right: 34px;
+        margin-bottom: 34px;
+    }
+}
+
+@media screen and (max-width: 663px) {
+    .container {
+       padding: 0px 50px;
+    }
+
+    .title_work {
+        padding-left: 50px;
+    }
+
+    .works {
+        width: calc(100vw - 100px);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 496px) {
+    .container {
+       padding: 0px 50px;
+    }
+
+    .title_work {
+        padding-left: 50px;
+    }
+
+    .works {
+        justify-content: center;
+    }
+
+    .work {
+        width: 200px;
+        height: 200px;
+        margin-right: 0px;
+        margin-bottom: 34px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    
+    h2 {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    
+    h3 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .title {
+        padding-bottom: 12px;
+    }
+
+    .subtitle {
+        padding-left: 50px;
+    }
+}

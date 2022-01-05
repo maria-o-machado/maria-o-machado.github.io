@@ -1,26 +1,57 @@
 <!doctype html>
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/contacts.css">
+    <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,500,600|IBM+Plex+Sans:200,300,400,500,600,700&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,400i,500,600|IBM+Plex+Sans:200,300,400,500,600,700&display=swap' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
-    <div style="display: flex; flex-direction: row;"><img src="assets/ex.png" style="width: 10%"/><h1>Maria Machado</h1></div>
-    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-    <div>
-        <h2>Projetos</h2>
-        <ul>
-            <li>Projetos: <a href="https://github.com/maria-o-machado/">molimpiadias@gmail.com</a></li>
-            <li>Projetos: <a href="https://github.com/maria-o-machado/">https://linkedin.com/in/maria-o-machado</a></li>
-            <li>Projetos: <a href="https://github.com/maria-o-machado/">https://github.com/maria-o-machado/</a></li>
-            <li>Projetos: <a href="https://github.com/maria-o-machado/">https://gitlab.com/maria-o-machado</a></li>
-        </ul>
+
+<body id="page">
+    <nav class="nav">
+        <a class="nav-link" id="home-link" href="#home">Home</a>
+        <a class="nav-link" id="about-link" href="#about">About</a>
+        <a class="nav-link" id="work-link" href="#work">Some Work</a>
+    </nav>
+    <div class="homepage">
+        <div class="container" id="home">
+            <div class="content content-title">
+                <div class="title">
+                    <h1>Maria</h1>
+                    <h1 class="surname">Machado</h1>
+                </div>
+                <h2 class="subtitle">Software Developer</h2>
+            </div>
+            <div class="content content-contacts">
+                <div class="contacts">
+                    <a href="mailto:molimpiadias@gmail.com"><img class="image" src="assets/email.png"/></a>
+                    <a href="https://linkedin.com/in/maria-o-machado"><img class="image" src="assets/linkedin.png"/></a>
+                    <a href="https://github.com/maria-o-machado/"><img class="image" src="assets/github.png"/></a>
+                    <a href="https://gitlab.com/maria-o-machado"><img class="image" src="assets/gitlab.png"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="about">
+            <div class="content">
+                <h2 class="title">About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="content content-contacts"></div>
+        </div>
+        <div class="container-some-work" id="work">
+            <div class="content">
+                <h2 class="title title_work">Some Work</h2>
+                <div class="works">
+                    <a><div class="work first-work"><h3>Coimbra Ink</h3><p>[Django: Python]</p></div></a>
+                    <a><div class="work"><h3>Edetailing</h3><p>[Ionic: TypeScript]</p></div></a>
+                    <a><div class="work"><h3>Notes App</h3><p>[Android App: Java]</p></div></a>
+                    <a><div class="work"><h3>Casa Tia Alzira</h3><p>[Ract: Javascript]</p></div></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <h2>Contactos</h2>
-        <ul>
-            <li>Email: <a href="https://github.com/maria-o-machado/">molimpiadias@gmail.com</a></li>
-            <li>Linkedin: <a href="https://github.com/maria-o-machado/">https://linkedin.com/in/maria-o-machado</a></li>
-            <li>GitHub: <a href="https://github.com/maria-o-machado/">https://github.com/maria-o-machado/</a></li>
-            <li>GitLab: <a href="https://github.com/maria-o-machado/">https://gitlab.com/maria-o-machado</a></li>
-        </ul>
-    </div>   
 </body>
