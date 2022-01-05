@@ -46,6 +46,10 @@
     cursor: pointer;
 }
 
+#home {
+    background-color: #FFFFFF;
+}
+
 #about {
     background-color: #2F2F2F;
 }
