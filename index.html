@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/burger.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/contacts.css">
@@ -12,11 +13,26 @@
 </head>
 
 <body id="page">
+    <div class="burguer-container">
+        <div class="burger">
+            <div class="dash"></div>
+            <div class="dash"></div>
+            <div class="dash"></div>
+            <div class="dash"></div>
+        </div>
+    </div>
     <nav class="nav">
         <a class="nav-link" id="home-link" href="#home">Home</a>
         <a class="nav-link" id="about-link" href="#about">About</a>
         <a class="nav-link" id="work-link" href="#work">Some Work</a>
     </nav>
+    <div class="menu-container">
+        <div class="menu">
+            <a class="nav-link" id="home-link" href="#home">Home</a>
+            <a class="nav-link" id="about-link" href="#about">About</a>
+            <a class="nav-link" id="work-link" href="#work">Some Work</a>
+        </div>
+    </div>
     <div class="homepage">
         <div class="container" id="home">
             <div class="content content-title">
@@ -54,4 +70,5 @@
             </div>
         </div>
     </div>
+    <script src="menu.js"></script>
 </body>

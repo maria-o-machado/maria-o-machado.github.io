@@ -199,6 +199,15 @@ html {
         margin-right: 34px;
         margin-bottom: 34px;
     }
+
+    .burguer-container {
+        display: flex !important;
+    }
+
+    .nav-link {
+        padding: 0px;
+    }
+    
 }
 
 @media screen and (max-width: 663px) {
@@ -264,4 +273,38 @@ html {
     .subtitle {
         padding-left: 50px;
     }
+}
+
+.menu-container {
+    height: 100vh;
+    width: 100vw;
+    background: #2F2F2F;
+    position: absolute;
+    left: calc(0px - 100%);
+    z-index: 1;
+}
+
+.menu {
+    height: calc(100vh - 400px);
+    width: 100%;
+    padding: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu > a {
+    color: #fff;
+}
+
+.activemenu {
+    transition: 1.5s;
+    transform: translateX(100%);
+}
+
+.deactivatemenu {
+    transition: 1.5s;
+    transform: translateX(-100%);
 }
