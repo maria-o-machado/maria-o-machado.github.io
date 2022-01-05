@@ -184,6 +184,10 @@ html {
         display: none;
     }
 
+    .nav {
+        display: none; 
+    }
+
     .content-title {
         width: fit-content;
         justify-self: center;
