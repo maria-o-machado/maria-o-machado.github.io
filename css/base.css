@@ -46,7 +46,7 @@ h3 {
     font-family: IBM Plex Mono;
     font-style: bold;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -72,12 +72,17 @@ a:-webkit-any-link {
     }
     
     h2 {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 23px;
     }
     
     h3 {
         font-size: 16px;
+        line-height: 25px;
+    }
+
+    p {
+        font-size: 14px;
         line-height: 25px;
     }
 }
