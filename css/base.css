@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-    font-family: Ibarra Real Nova;
+    font-family: IBM Plex Mono;
     font-style: bold;
     font-weight: bold;
     font-size: 24px;
@@ -51,12 +51,12 @@ h3 {
 }
 
 p {
-    font-family: Ibarra Real Nova;
+    font-family: IBM Plex Mono;
     color: #fff;
 }
 
 a {
-    font-family: Ibarra Real Nova;
+    font-family: IBM Plex Mono;
     text-decoration: none;
 }
 
