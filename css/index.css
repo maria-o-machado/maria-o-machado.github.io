@@ -1,30 +1,9 @@
-* {
-    margin: 0;
-    overflow-x: hidden;
-}
-
-#page {
-    background-color: white;
-}
-
 .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     padding: 0px 150px;
-}
-
-.title {
-    padding-bottom: 24px;
-}
-
-.subtitle {
-    padding-left: 100px;
-}
-
-.surname {
-    padding-left: 40px;
 }
 
 .nav {
@@ -46,16 +25,20 @@
     cursor: pointer;
 }
 
-#home {
-    background-color: #FFFFFF;
+.title {
+    padding-bottom: 24px;
 }
 
-#about {
-    background-color: #2F2F2F;
+.subtitle {
+    padding-left: 100px;
 }
+
+.surname {
+    padding-left: 40px;
+}
+
 
 #work {
-    background: #E7E7E7;
     height: 100vh;
     display: flex;
     grid-template-columns: none;
@@ -91,49 +74,18 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#about p {
-    color: #fff;
-}
-
-#about h2 {
-    color: #fff;
-}
-
-h1 {
-    font-family: IBM Plex Mono;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 52px;
-}
-
-h2 {
-    font-family: IBM Plex Mono;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-h3 {
-    font-family: Ibarra Real Nova;
-    font-style: bold;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-p {
-    font-family: Ibarra Real Nova;
-}
-
-a {
-    font-family: Ibarra Real Nova;
-    text-decoration: none;
-}
-
 .image {
     width: 35px;
     height: auto;
-    padding-left: 40px;
+    margin-left: 40px;
+    border-radius: 50%;
+    transition: 0.6s ease-in-out;
+}
+
+.image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6); 
+    cursor: pointer;
 }
 
 .content-contacts {
@@ -141,6 +93,10 @@ a {
     justify-self: end;
     padding-bottom: 40px;
     padding-left: 0px !important;
+}
+
+.contacts {
+    padding-top: 10px;
 }
 
 html {
@@ -213,7 +169,7 @@ html {
     }
 
     .image {
-        padding: 0;
+        margin: 0;
         width: 48px !important;
         height: 48px !important;
     }
@@ -259,21 +215,6 @@ html {
         height: 200px;
         margin-right: 0px;
         margin-bottom: 34px;
-    }
-
-    h1 {
-        font-size: 24px;
-        line-height: 40px;
-    }
-    
-    h2 {
-        font-size: 16px;
-        line-height: 23px;
-    }
-    
-    h3 {
-        font-size: 16px;
-        line-height: 25px;
     }
 
     .title {
@@ -342,4 +283,14 @@ html {
     left: 20px;
     margin-bottom: 20px;
     z-index: 2;
+    cursor: pointer;
+}
+
+.work {
+    transition: box-shadow 0.6s ease-in-out;
+}
+
+.work:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.6); 
+    cursor: pointer;
 }

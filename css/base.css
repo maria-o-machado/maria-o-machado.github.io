@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#page {
+    background-color: white;
+}
+
+#home {
+    background-color: #FFFFFF;
+}
+
+#about {
+    background-color: #2F2F2F;
+}
+
+#work {
+    background: #E7E7E7;
+}
+
+#about p {
+    color: #fff;
+}
+
+#about h2 {
+    color: #fff;
+}
+
+h1 {
+    font-family: IBM Plex Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+h2 {
+    font-family: IBM Plex Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: Ibarra Real Nova;
+    font-style: bold;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p {
+    font-family: Ibarra Real Nova;
+}
+
+a {
+    font-family: Ibarra Real Nova;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    color: #2F2F2F;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 496px) {
+    h1 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    
+    h2 {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    
+    h3 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
